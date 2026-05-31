@@ -510,7 +510,7 @@ SELECT * FROM products;
 # solucion con función FIND_IN_SET()
 """ 👉 Necessitem conèixer el nombre de vegades que s'ha venut cada producte. """
 
-SELECT p.id, COUNT(*)
+SELECT p.id, COUNT(*) AS total
 FROM transactions AS t
 JOIN products AS p
 ON FIND_IN_SET(p.id, REPLACE(t.product_ids, ', ', ',')) > 0
