@@ -152,7 +152,6 @@ WHERE t.declined = '0'
 AND SAFE_CAST(t.amount AS NUMERIC) BETWEEN 100 AND 200
 AND DATE(PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', t.timestamp)) IN ('2015-04-29', '2018-07-20', '2024-03-13');
 
--- FRANK's
 
 
 ######################################################
