@@ -1,0 +1,33 @@
+# Credenciales
+.env
+.env.*
+!.env.example
+*.key
+
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+.venv/
+venv/
+
+# Datos brutos y extracciones
+steam_etl/
+itad_etl/
+sampling/
+data/raw/
+*.duckdb
+
+# Archivos grandes e intermedios
+steam_reviews*.json
+steam_reviews.parquet
+igdb_games_raw.json
+steam_map.json
+igdb_steam_mapping.json
+itad_mapping_checkpoint.csv
+manifest_backup_*.csv
+*.pkl
+
+# Archivos locales
+.DS_Store
+Thumbs.db
